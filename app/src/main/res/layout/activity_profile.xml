@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/club_prof_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_round_person_24"
+            android:transitionName="profile_trans">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Name"
+                    android:transitionName="club-name_trans"
+                    android:id="@+id/club_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/club_prof_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+        <Button
+            android:id="@+id/sign_out"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/count_layout"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Sign out">
+        </Button>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/club_name"
+            android:id="@+id/update_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:text="About"
+                android:layout_marginTop="10dp"
+                android:id="@+id/about"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:autoLink="all"
+                android:layout_marginTop="7dp"
+                android:id="@+id/links"
+                android:text="Links"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/count_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_lay"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/posts_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Posts"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/events_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Events"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/club_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sign_out"
+            android:layout_marginTop="321dp"
+            android:overScrollMode="never"
+            android:paddingVertical="10dp"
+            android:scrollY="1dp"></androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/update"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            android:text="Edit">
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

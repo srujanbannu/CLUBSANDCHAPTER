@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "2815562285",
+    "project_id": "vitapclubs",
+    "storage_bucket": "vitapclubs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2815562285:android:bf2fcc1467c4f5f5529ea4",
+        "android_client_info": {
+          "package_name": "com.example.events"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2815562285-o2b1363o99rlg1pctlt87m563ci2v677.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.events",
+            "certificate_hash": "cd88f3be605f12aca7a4184eaa1df68a2f4a3fa9"
+          }
+        },
+        {
+          "client_id": "2815562285-r5f6ll0dmjuvkmrvcb5ojfjae0cu1pid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATeeFPZ4zoTZrJqxnxXoAjbQ33yK18unQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2815562285-r5f6ll0dmjuvkmrvcb5ojfjae0cu1pid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
